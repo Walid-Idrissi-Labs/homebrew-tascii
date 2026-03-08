@@ -5,21 +5,21 @@
 class Tascii < Formula
   desc "A fast, minimal terminal task manager with priorities and deadlines."
   homepage "https://github.com/walid-idrissi-labs/tascii"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/walid-idrissi-labs/tascii/releases/download/v1.2.0/tascii_darwin_amd64.tar.gz"
-      sha256 "66e7a051502d0708ae82afa5cdc67ca08d8691dcbbbeb861a2ec695bf5bb8828"
+      url "https://github.com/walid-idrissi-labs/tascii/releases/download/v1.3.0/tascii_darwin_amd64.tar.gz"
+      sha256 "77c39bf798033a833c8547519ede70a72216657b6bb375a5f1764b508d66a2af"
 
       define_method(:install) do
         bin.install "tascii"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/walid-idrissi-labs/tascii/releases/download/v1.2.0/tascii_darwin_arm64.tar.gz"
-      sha256 "493771e8c62b1be52e45e48a9eba6349e0c61ea9fc760be40ae89e07a2b1a11b"
+      url "https://github.com/walid-idrissi-labs/tascii/releases/download/v1.3.0/tascii_darwin_arm64.tar.gz"
+      sha256 "106baa4009853c765f6159187759a5439fec1895dad5ad33873b951ae324b0c7"
 
       define_method(:install) do
         bin.install "tascii"
@@ -29,15 +29,15 @@ class Tascii < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/walid-idrissi-labs/tascii/releases/download/v1.2.0/tascii_linux_amd64.tar.gz"
-      sha256 "ec0c6dd64a9bd1dc2e5c621fa85f4bada933acb45a57a75f5bc39eabde021c56"
+      url "https://github.com/walid-idrissi-labs/tascii/releases/download/v1.3.0/tascii_linux_amd64.tar.gz"
+      sha256 "41149f01355b25bec06a7aa5710f2627e07508c2dade3922a79cae5ede1fa38a"
       define_method(:install) do
         bin.install "tascii"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/walid-idrissi-labs/tascii/releases/download/v1.2.0/tascii_linux_arm64.tar.gz"
-      sha256 "ee67f2334a28fe049b4028f220c34321aece3685c4cf87020c3b504b36217aea"
+      url "https://github.com/walid-idrissi-labs/tascii/releases/download/v1.3.0/tascii_linux_arm64.tar.gz"
+      sha256 "71a1a4e467439cf521bcb8d8eeedbf5b6cc5d0947c90a5e87a14d62d5f17295d"
       define_method(:install) do
         bin.install "tascii"
       end
